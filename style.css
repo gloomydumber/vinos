@@ -1,0 +1,85 @@
+@import url("./css/reset.css");
+
+body,
+html {
+  margin: auto;
+}
+
+body {
+  width: 100vh;
+  height: 100vh;
+  background-color: #093687;
+  color: white;
+}
+
+.bigBossSeokWoo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img {
+  width: 324px;
+  height: 448px;
+  border: 3px solid white;
+}
+
+.buttons {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-two {
+  margin: 9px;
+}
+
+a[class*="btn"] {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-two.small {
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn-two.middle {
+  padding: 3%;
+  /* font-size: 14px; */
+  font-weight: bold;
+  width: 100%;
+}
+
+/* Colors for .btn and .btn-two */
+.btn-two.color1 {
+  background-color: #093687;
+  font-weight: bold;
+  border: 1px solid white;
+}
+
+/* Button two - I have no creativity for names */
+.btn-two {
+  color: var(--mainColorBG);
+  padding: 15px 25px;
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.21);
+  border-bottom-color: rgba(0, 0, 0, 0.34);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.34) inset,
+    0 2px 0 -1px rgba(0, 0, 0, 0.13), 0 3px 0 -1px rgba(0, 0, 0, 0.08),
+    0 3px 13px -1px rgba(0, 0, 0, 0.21);
+}
+.btn-two:active {
+  top: 1px;
+  color: grey;
+  border-color: rgba(0, 0, 0, 0.34) rgba(0, 0, 0, 0.21) rgba(0, 0, 0, 0.21);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.89), 0 1px rgba(0, 0, 0, 0.05) inset;
+  position: relative;
+}
