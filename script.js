@@ -159,12 +159,22 @@ function krwbtcBoth(){
         delete result[key];
       }
     }
-
-    console.log(result);
-
+    // console.log(result);
+    writeNomiate(result)
   })
   .catch(err => {
     console.error(err);
   });
 
+}
+
+function writeNomiate(obj){
+  const btcLists = document.getElementById('btcLists');
+  let TempString = '';
+  for(key in obj){
+    TempString += `${key}(${obj[key]}), `;
+  }
+  TempString = TempString.slice(0,-2);
+  
+  btcLists.innerText = TempString;
 }
