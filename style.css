@@ -134,7 +134,7 @@ a[class*="btn"] {
 }
 
 .contents {
-  width: 100%;
+  width: 70%;
   height: 20%;
   animation: fadein 6.5s;
 }
